@@ -13,10 +13,12 @@ namespace screen {
 struct Particle {
 
 	double m_x, m_y;
+	double m_xSpeed, m_ySpeed;
 
 public:
 	Particle();
 	virtual ~Particle();
+	void update();
 };
 
 } /* namespace screen */

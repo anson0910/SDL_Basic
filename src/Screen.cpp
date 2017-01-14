@@ -52,8 +52,13 @@ bool Screen::init() {
 
 	m_buffer = new Uint32[SCREEN_WIDTH * SCREEN_HEIGHT];
 	// set all pixels to black
-	memset(m_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
+	clear();
+	//memset(m_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
 	return true;
+}
+
+void Screen::clear() {
+	memset(m_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
 }
 
 void Screen::update() {
