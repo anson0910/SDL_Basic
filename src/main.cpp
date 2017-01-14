@@ -37,7 +37,7 @@ int main() {
 		Uint8 blue = (Uint8) ((1 + sin(elapsed * 0.003)) * 128);
 
 		// set particles
-		swarm.update();
+		swarm.update(elapsed);
 		const Particle * const pParticles = swarm.getParticles();
 		for (int i = 0; i < Swarm::NUM_PARTICLES; i++) {
 			Particle particle = pParticles[i];
