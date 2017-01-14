@@ -1,4 +1,4 @@
-src/C1S8L61_SDLBasic.o: ../src/C1S8L61_SDLBasic.cpp \
+src/Screen.o: ../src/Screen.cpp ../src/Screen.h \
   /usr/local/include/SDL2/SDL.h /usr/local/include/SDL2/SDL_main.h \
   /usr/local/include/SDL2/SDL_stdinc.h \
   /usr/local/include/SDL2/SDL_config.h \
@@ -40,6 +40,8 @@ src/C1S8L61_SDLBasic.o: ../src/C1S8L61_SDLBasic.cpp \
   /usr/local/include/SDL2/SDL_system.h \
   /usr/local/include/SDL2/SDL_timer.h \
   /usr/local/include/SDL2/SDL_version.h
+
+../src/Screen.h:
 
 /usr/local/include/SDL2/SDL.h:
 

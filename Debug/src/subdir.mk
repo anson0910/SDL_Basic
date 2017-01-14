@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/C1S8L61_SDLBasic.cpp 
+../src/Screen.cpp \
+../src/main.cpp 
 
 OBJS += \
-./src/C1S8L61_SDLBasic.o 
+./src/Screen.o \
+./src/main.o 
 
 CPP_DEPS += \
-./src/C1S8L61_SDLBasic.d 
+./src/Screen.d \
+./src/main.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
