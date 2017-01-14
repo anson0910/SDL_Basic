@@ -39,7 +39,8 @@ src/main.o: ../src/main.cpp /usr/local/include/SDL2/SDL.h \
   /usr/local/include/SDL2/SDL_render.h \
   /usr/local/include/SDL2/SDL_system.h \
   /usr/local/include/SDL2/SDL_timer.h \
-  /usr/local/include/SDL2/SDL_version.h ../src/Screen.h
+  /usr/local/include/SDL2/SDL_version.h ../src/Screen.h ../src/Swarm.h \
+  ../src/Particle.h
 
 /usr/local/include/SDL2/SDL.h:
 
@@ -128,3 +129,7 @@ src/main.o: ../src/main.cpp /usr/local/include/SDL2/SDL.h \
 /usr/local/include/SDL2/SDL_version.h:
 
 ../src/Screen.h:
+
+../src/Swarm.h:
+
+../src/Particle.h:
