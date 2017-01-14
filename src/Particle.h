@@ -13,7 +13,7 @@ namespace screen {
 struct Particle {
 
 	double m_x, m_y;
-	double m_xSpeed, m_ySpeed;
+	double m_speed, m_direction;
 
 public:
 	Particle();

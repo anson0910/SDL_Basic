@@ -43,8 +43,9 @@ int main() {
 			Particle particle = pParticles[i];
 			// map x and y from [-1, 1] to [0, SCREEN_WIDTH] and [0, SCREEN_HEIGHT]
 			int x = (particle.m_x + 1) * Screen::SCREEN_WIDTH / 2;
-			int y = (particle.m_y + 1) * Screen::SCREEN_HEIGHT / 2;
+			int y = particle.m_y * Screen::SCREEN_WIDTH / 2 + Screen::SCREEN_HEIGHT / 2;
 			screen.setPixel(x, y, red, green, blue);
+			//screen.setPixel(x, y, 255, 255, 255);
 		}
 
 		// update particles
