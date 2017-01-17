@@ -30,11 +30,11 @@ int main() {
 	Swarm swarm;
 
 	while (true) {
-		screen.clear();
+		//screen.clear();
 		int elapsed = SDL_GetTicks();
-		Uint8 red = (Uint8) ((1 + sin(elapsed * 0.002)) * 128);
-		Uint8 green = (Uint8) ((1 + sin(elapsed * 0.001)) * 128);
-		Uint8 blue = (Uint8) ((1 + sin(elapsed * 0.003)) * 128);
+		Uint8 red = (Uint8) ((1 + sin(elapsed * 0.0002)) * 128);
+		Uint8 green = (Uint8) ((1 + sin(elapsed * 0.0001)) * 128);
+		Uint8 blue = (Uint8) ((1 + sin(elapsed * 0.0003)) * 128);
 
 		// set particles
 		swarm.update(elapsed);
@@ -48,6 +48,7 @@ int main() {
 			//screen.setPixel(x, y, 255, 255, 255);
 		}
 
+		screen.boxBlur();
 		// update particles
 		screen.update();
 		// check events
