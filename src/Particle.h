@@ -13,7 +13,12 @@ namespace screen {
 struct Particle {
 
 	double m_x, m_y;
+
+private:
 	double m_speed, m_direction;
+
+private:
+	void init();
 
 public:
 	Particle();
